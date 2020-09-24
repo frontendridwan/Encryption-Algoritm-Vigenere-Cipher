@@ -6,22 +6,30 @@ class Home extends CI_Controller
     public function index()
     {
         $data = [
-            'title' => 'Home | Encryption Algoritm'
+            'title' => 'Home | Encryption Algoritm',
+            'enkripsi' => '',
+            'dekripsi' => ''
         ];
+        $this->load->view('templates/header', $data);
         $this->load->view('pages/home', $data);
     }
 
     public function encryptpage()
     {
+        $data = [
+            'title' => 'Encrypt | Encryption Algoritm',
+            'hasil' => '',
+            'enkripsi' => 'active',
+            'dekripsi' => ''
+        ];
+
         $this->form_validation->set_rules('code', 'Code', 'required');
         $this->form_validation->set_rules('pswd', 'pswd', 'required|alpha');
 
         if ($this->form_validation->run() == false) {
-            $data = [
-                'title' => 'Encrypt | Encryption Algoritm',
-                'hasil' => ''
-            ];
+            $this->load->view('templates/header', $data);
             $this->load->view('pages/encrypt', $data);
+            $this->load->view('templates/footer', $data);
         } else {
             $code = htmlspecialchars($this->input->post('code', true));
             $pswd = htmlspecialchars($this->input->post('pswd', true));
@@ -33,21 +41,29 @@ class Home extends CI_Controller
                 'pswd' => $pswd,
                 'hasil' => $hasil
             ];
+            $this->load->view('templates/header', $data);
             $this->load->view('pages/encrypt', $data);
+            $this->load->view('templates/footer', $data);
         }
     }
 
     public function decryptpage()
     {
+        $data = [
+            'title' => 'Decrypt | Encryption Algoritm',
+            'hasil' => '',
+            'enkripsi' => '',
+            'dekripsi' => 'active'
+        ];
+
         $this->form_validation->set_rules('code', 'Code', 'required');
         $this->form_validation->set_rules('pswd', 'pswd', 'required|alpha');
 
         if ($this->form_validation->run() == false) {
-            $data = [
-                'title' => 'Decrypt | Encryption Algoritm',
-                'hasil' => ''
-            ];
+
+            $this->load->view('templates/header', $data);
             $this->load->view('pages/decrypt', $data);
+            $this->load->view('templates/footer', $data);
         } else {
             $code = htmlspecialchars($this->input->post('code', true));
             $pswd = htmlspecialchars($this->input->post('pswd', true));
@@ -59,7 +75,9 @@ class Home extends CI_Controller
                 'pswd' => $pswd,
                 'hasil' => $hasil
             ];
+            $this->load->view('templates/header', $data);
             $this->load->view('pages/decrypt', $data);
+            $this->load->view('templates/footer', $data);
         }
     }
 

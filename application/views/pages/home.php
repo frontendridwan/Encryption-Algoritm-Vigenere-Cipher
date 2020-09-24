@@ -1,42 +1,15 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
-
-    <title><?= $title; ?></title>
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-            <a class="navbar-brand" href="<?php echo base_url(); ?>">Vigenere Cipher</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="<?= base_url('home/encryptpage'); ?>">Encrypt</a>
-                    <a class="nav-item nav-link" href="<?= base_url('home/decryptpage'); ?>">Decrypt</a>
-                </div>
+<section class="bg">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-4 text-center my-auto">
+                <h1 class="mt-3 mb-3">Vigenere Cipher</h1>
+                <p>a simple website-based program with the application of Vigenere Cipher to encrypt and decrypt a plaintext</p>
+                <a href="<?= base_url('home/encryptpage'); ?>" class="btn btn-info">Encrypt</a>
+                <a href="<?= base_url('home/decryptpage'); ?>" class="btn btn-info">Decrypt</a>
+            </div>
+            <div class="col-8 mt-5 text-center">
+                <img src="<?= base_url('assets/landingpage.png'); ?>" alt="" width="90%">
             </div>
         </div>
-    </nav>
-
-    <div class="container">
-        <h1 class="mt-3 mb-3" align="center">Vigenere Cipher - Home</h1>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
-
-</html>
+</section>
