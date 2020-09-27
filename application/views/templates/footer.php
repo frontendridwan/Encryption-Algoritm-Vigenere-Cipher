@@ -1,3 +1,15 @@
+<footer class="text-muted">
+    <div class="container text-center">
+        <p>Copyright&copy; 2020</p>
+        <a href="https://www.instagram.com/_ridwan23/" class="mt-0"><i class="fab fa-instagram fa-2x mx-2"></i></a>
+        <a href="https://web.facebook.com/m.ridwan.23/" class="mt-0"><i class="fab fa-facebook fa-2x mx-2"></i></a>
+        <a href="https://twitter.com/_mridwan23" class="mt-0"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+        <a href="https://www.youtube.com/watch?v=XT0ggG3cYYM" class="mt-0"><i class="fab fa-youtube fa-2x mx-2"></i></a>
+        <a href="https://github.com/muhridwan23" class="mt-0"><i class="fab fa-github fa-2x mx-2"></i></a>
+
+    </div>
+</footer>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -9,15 +9,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
 
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="<?= base_url('assets/fontawesome/css/all.min.css'); ?>">
+
     <title><?= $title; ?></title>
 
     <style>
-        .bg {
+        .bg footer {
             background-color: #f1f1f1;
         }
 
         section {
-            min-height: 563px;
+            min-height: 482px;
         }
 
         h1 {

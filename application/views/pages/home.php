@@ -7,8 +7,8 @@
                 <a href="<?= base_url('home/encryptpage'); ?>" class="btn btn-info">Encrypt</a>
                 <a href="<?= base_url('home/decryptpage'); ?>" class="btn btn-info">Decrypt</a>
             </div>
-            <div class="col-8 mt-5 text-center">
-                <img src="<?= base_url('assets/landingpage.png'); ?>" alt="" width="90%">
+            <div class="col-8 mt-4 text-center">
+                <img src="<?= base_url('assets/landingpage.png'); ?>" alt="" width="85%">
             </div>
         </div>
     </div>
