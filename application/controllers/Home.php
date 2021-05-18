@@ -40,7 +40,9 @@ class Home extends CI_Controller
                 'title' => 'Encrypt | Encryption Algoritm',
                 'code' => $code,
                 'pswd' => $pswd,
-                'hasil' => $hasil
+                'hasil' => $hasil,
+                'enkripsi' => 'active',
+                'dekripsi' => ''
             ];
             $this->load->view('templates/header', $data);
             $this->load->view('pages/encrypt', $data);
@@ -74,7 +76,9 @@ class Home extends CI_Controller
                 'title' => 'Decrypt | Encryption Algoritm',
                 'code' => $code,
                 'pswd' => $pswd,
-                'hasil' => $hasil
+                'hasil' => $hasil,
+                'enkripsi' => '',
+                'dekripsi' => 'active'
             ];
             $this->load->view('templates/header', $data);
             $this->load->view('pages/decrypt', $data);
